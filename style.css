@@ -1,0 +1,114 @@
+/* Body background & font */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff9c4; /* light yellow */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    background: #fffde7; /* thora lighter yellow */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    width: 400px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #555;
+}
+
+/* Input area */
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-area input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-area button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background: #ffb74d;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.input-area button:hover {
+    background: #ffa726;
+}
+
+/* Controls section */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.controls select, .controls button {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.controls button {
+    background: #ff8a65;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.controls button:hover {
+    background: #ff7043;
+}
+
+/* Task list */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    background: #fff8e1; /* light yellow for tasks */
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+    color: gray;
+    background: #e0e0e0;
+}
+
+/* Footer count */
+#count {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
